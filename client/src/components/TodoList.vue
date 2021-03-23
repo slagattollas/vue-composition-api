@@ -28,7 +28,7 @@ export default defineComponent({
     const todos:Ref<Item> = ref({} as Item);
     const filteredItems:Ref<ItemElement[]> = ref([] as ItemElement);
     const searchBox = ref(null);
-
+  
     onMounted(() => {
       axios
         .get('http://localhost:3000/api/v1/todo/')
